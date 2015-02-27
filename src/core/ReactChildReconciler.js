@@ -33,7 +33,7 @@ var ReactChildReconciler = {
    * @return {?object} A set of child instances.
    * @internal
    */
-  instantiateChildren: function(nestedChildNodes, transaction, context) {
+  instantiateChildren: function(nestedChildNodes) {
     var children = flattenChildren(nestedChildNodes);
     for (var name in children) {
       if (children.hasOwnProperty(name)) {
